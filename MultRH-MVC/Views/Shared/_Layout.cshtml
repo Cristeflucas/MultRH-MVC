@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MultRH</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MultRH_MVC.styles.css" asp-append-version="true" />
+
+
+</head>
+<body>
+    <header>
+
+        <section class="top-bar">
+            <div class="div-logo"><img src="images/logo.png" class="logo"></div>
+            <div class="numbers">
+                <img src="images/phone.png" class="phone">
+                <div class="contact">
+                    <span>(84) 3027-4420 / 98818-4914</span>
+                    <p>Segunda à Sexta-feira das 08h às 17h</p>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://api.whatsapp.com/send/?phone=558488184914&text&type=phone_number&app_absent=0"><img src="images/whatsapp.png" class="whatsapp"></a>
+                <a href="https://www.facebook.com/multrhempregos"><img src="images/facebook.png" class="facebook"></a>
+                <a href="https://www.instagram.com/multrh/"><img src="images/instagram.png" class="instagram"></a>
+            </div>
+        </section>
+        <nav class="nav-bar">
+            <a asp-area="" asp-controller="Home" asp-action="Index">INICIO</a>
+            <a asp-area="" asp-controller="Home" asp-action="Mult">A MULT</a>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle"><span>CURSOS</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="rotinasadm.html">Rotinas Administrativas + Informatica</a></li>
+                    <li><a href="agente.html">Agente de Portaria EAD</a></li>
+                    <li><a href="informatica.html">Informatica</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle"><span>SERVIÇOS EMPRESARIAIS</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="recrutamento.html">Recrutamento e Seleção</a></li>
+                    <li><a href="encaminhamento.html">Encaminhamento de Candidatos</a></li>
+                </ul>
+            </li>
+            <a href="cartas.html" onclick="return true" class="cartas"><span>CARTAS PARA ENTREVISTA</span></a>
+            <a href="contato.html" onclick="return true" class="contato"><span>CONTATO</span></a>
+            <form class="search-form">
+                <input type="search" placeholder="Pesquisar...">
+                <button><i class='bx bx-search-alt-2'></i></button>
+            </form>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - MultRH - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

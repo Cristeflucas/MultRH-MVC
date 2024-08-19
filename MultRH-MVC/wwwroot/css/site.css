@@ -1,0 +1,191 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.top-bar {
+    max-width: 1407px;
+    max-height: 142px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8px;
+}
+
+.div-logo {
+    max-width: 565px;
+    max-height: 97px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers {
+    max-width: 390px;
+    max-height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    max-width: 180px;
+    max-height: 66px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: #999999 0.1px solid;
+}
+
+.contact span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+.nav-bar {
+    background-color: #0078b9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 79px;
+}
+
+    .nav-bar a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .nav-bar a:hover {
+            color: #4CAF50;
+        }   
+
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+    .search-form input[type="search"] {
+        width: 200px;
+        height: 30px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px; /* adiciona borda arredondada apenas no lado esquerdo */
+        font-size: 16px;
+    }
+
+    .search-form button {
+        height: 30px;
+        padding: 10px 20px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        border-radius: 0 5px 5px 0; /* adiciona borda arredondada apenas no lado direito */
+        background-color: #4CAF50;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+/*dropdown*/
+.dropdown {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+    .dropdown button {
+        background-color: #0078b9;
+        border: none;
+        color: #4CAF50;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0078b9;
+    width: 300px;
+    height: auto;
+    border-top: 4px solid #4CAF50;
+    padding: 10px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 16px;
+}
+
+    .dropdown-menu li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown-menu li:hover {
+        background-color: #01689f;
+        cursor: pointer;
+        color: #4CAF50;
+    }
+
+
+/*Imagens*/
+.logo {
+    width: 174px;
+    height: 77px;
+    margin: 10px;
+}
+
+.phone {
+    height: 48px;
+    width: 48px;
+    margin: 0px 15px
+}
+
+.whatsapp {
+    margin: 9px 5px 5px;
+}
+
+.facebook {
+    height: 33px;
+    width: 28px;
+    margin: 8px 5px 5px;
+}
+
+.instagram {
+    margin: 10px 5px 5px;
+}
