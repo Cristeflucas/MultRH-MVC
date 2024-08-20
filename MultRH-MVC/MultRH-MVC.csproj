@@ -8,22 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="images\**" />
     <Compile Remove="Views\Shared\NewFolder\**" />
     <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="images\**" />
     <Content Remove="Views\Shared\NewFolder\**" />
     <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="images\**" />
     <EmbeddedResource Remove="Views\Shared\NewFolder\**" />
     <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="images\**" />
     <None Remove="Views\Shared\NewFolder\**" />
     <None Remove="wwwroot\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.17" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="images\" />
   </ItemGroup>
 
 </Project>

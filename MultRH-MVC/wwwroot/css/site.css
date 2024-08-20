@@ -2,6 +2,9 @@ html {
     font-size: 14px;
 }
 
+    
+
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -189,3 +192,4 @@ body {
 .instagram {
     margin: 10px 5px 5px;
 }
+

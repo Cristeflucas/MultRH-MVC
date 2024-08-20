@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - MultRH</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MultRH_MVC.styles.css" asp-append-version="true" />
 
@@ -15,18 +17,18 @@
     <header>
 
         <section class="top-bar">
-            <div class="div-logo"><img src="images/logo.png" class="logo"></div>
+            <div class="div-logo"><img src="/images/logo.png" class="logo"></div>
             <div class="numbers">
-                <img src="images/phone.png" class="phone">
+                <img src="/images/phone.png" class="phone">
                 <div class="contact">
                     <span>(84) 3027-4420 / 98818-4914</span>
                     <p>Segunda à Sexta-feira das 08h às 17h</p>
                 </div>
             </div>
             <div class="social">
-                <a href="https://api.whatsapp.com/send/?phone=558488184914&text&type=phone_number&app_absent=0"><img src="images/whatsapp.png" class="whatsapp"></a>
-                <a href="https://www.facebook.com/multrhempregos"><img src="images/facebook.png" class="facebook"></a>
-                <a href="https://www.instagram.com/multrh/"><img src="images/instagram.png" class="instagram"></a>
+                <a href="https://api.whatsapp.com/send/?phone=558488184914&text&type=phone_number&app_absent=0"><img src="/images/whatsapp.png" class="whatsapp"></a>
+                <a href="https://www.facebook.com/multrhempregos"><img src="/images/facebook.png" class="facebook"></a>
+                <a href="https://www.instagram.com/multrh/"><img src="/images/instagram.png" class="instagram"></a>
             </div>
         </section>
         <nav class="nav-bar">
@@ -55,8 +57,8 @@
             </form>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container mw-100 p-0">
+        <main role="main" class="pb-3" >
             @RenderBody()
         </main>
     </div>
