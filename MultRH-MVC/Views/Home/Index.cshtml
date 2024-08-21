@@ -2,17 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 @model IEnumerable<MultRH_MVC.Models.ImageModel>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
 <div id="imageCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        @for (int i = 0; i < Model.Count(); i++){
+        @for (int i = 0; i < Model.Count(); i++)
+        {
             var image = Model.ElementAt(i);
             <div class="carousel-item @(i == 0 ? " active" : "")">
                 <img class="d-block w-100" src="@Url.Content(image.ImageUrl)" alt="Slide @(i + 1)">
-                <div class="carousel-caption d-none d-md-block p-0" style="width: 485px; height: 320px;">
+                <div class="carousel-caption d-none d-md-block p-0" style="width: 485px; height: 500px;">
                     <h1 style="width: 350px; height:100px; text-align:left; font-size:40px;font-family: 'Open Sans'; font-weight:800; letter-spacing:-0.8px; line-height:50px; text-transform:uppercase;">@image.Caption</h1>
                     <p style="text-align:left; font-size:20px;  ">@image.Description</p>
-
+                    <a href="https://api.whatsapp.com/send/?phone=558488184914&text&type=phone_number&app_absent=0" style="width:150px; justify-content:center; display: flex; background-color: white; padding:16px; border-radius:4px; text-decoration:none; color: black;">Cadastra-se</a>
                 </div>
 
             </div>
@@ -26,6 +28,14 @@
             <span class="sr-only"></span>
         </a>
     </div>
+    <section class="srv mw-100">
+        <div class="services" style="margin-top:70px; width: 387px; height:587px; ">
+            <img src="/images/bck-curriculos.png" class="img-fluid" ></img>
+            <div class="infos mw-100" style="background-color: red; height: 262px">
+                <span style="box-sizing: border-box; color: white; font-family:'Open Sans'; font-size: 16px; font-weight:300; letter-spacing: -0.2px; overflow-wrap:break-word;">Cadastre seu curriculo em nossa agência e dê um upgrade em sua carreira, garanta sua entrevista hoje.</span>
+            </div>
+        </div>
+    </section>
 
     @section Scripts {
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -33,7 +43,7 @@
     }
 
 
-    </div>
+</div>
 
 </div>
 
