@@ -2,7 +2,7 @@ html {
     font-size: 14px;
 }
 
-    
+
 
 
 @media (min-width: 768px) {
@@ -82,7 +82,7 @@ body {
 
         .nav-bar a:hover {
             color: #4CAF50;
-        }   
+        }
 
 
 .search-form {
@@ -111,7 +111,7 @@ body {
         color: #fff;
         cursor: pointer;
     }
-    
+
 /*dropdown*/
 .dropdown {
     position: relative;
@@ -192,7 +192,131 @@ body {
 .instagram {
     margin: 10px 5px 5px;
 }
-.service{
 
+.image-container {
+    position: relative;
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 100%; /* Para manter a responsividade */
 }
 
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%; /* Posiciona no meio verticalmente */
+    left: 38%; /* Posiciona no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar perfeitamente */
+    color: white; /* Cor do texto */
+    text-align: left; /* Centraliza o texto */
+}
+
+    .texto-sobre-imagem h1, {
+        margin: 0; /* Remove margens padrão */
+        font-weight: bold; /* Negrito */
+    }
+
+    .texto-sobre-imagem h1 {
+        font-size: 36px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    .texto-sobre-imagem p {
+        font-size: 18px; /* Ajuste o tamanho conforme necessário */
+        margin-top: 10px; /* Espaçamento entre os <h1> e <p> */
+    }
+
+    /*Section*/
+    .srv{
+        box-sizing: border-box;
+    }
+
+.botao {
+    background-color: red;
+    padding: 0px 50px 40px;
+    height: 90px
+}
+.botao1 {
+    background-color: yellow;
+    padding: 0px 50px 40px;
+    height: 90px
+}
+.botao2 {
+    background-color: blue;
+    padding: 0px 50px 40px;
+    height: 90px
+}
+
+.bot-div {
+    align-items: center;
+    background-color: rgba(51, 122, 183, 0);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 10;
+    font-size: 16px;
+    justify-content: center;
+    line-height: 22.88px;
+    min-height: 50px;
+    min-width: 0px;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+}
+.bot-div1 {
+    align-items: center;
+    background-color: rgba(51, 122, 183, 0);
+    border-bottom-color: black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: black;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 10;
+    font-size: 16px;
+    justify-content: center;
+    line-height: 22.88px;
+    min-height: 50px;
+    min-width: 0px;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+}
