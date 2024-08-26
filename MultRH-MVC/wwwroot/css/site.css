@@ -250,7 +250,7 @@ body {
     height: 90px
 }
 
-.bot-div {
+.botao a{
     align-items: center;
     background-color: rgba(51, 122, 183, 0);
     border-bottom-color: rgb(255, 255, 255);

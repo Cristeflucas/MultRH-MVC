@@ -35,6 +35,8 @@ namespace MultRH_MVC.Controllers
             ViewData["link"] = "www.multrh.com.br";
             return View();
         }
+
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

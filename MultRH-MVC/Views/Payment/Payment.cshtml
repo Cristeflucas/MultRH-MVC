@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Payment";
+}
+
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+@model MultRH_MVC.Models.ViewModels.Payment
+<h2>Pagamento</h2>
+
+<form asp-action="ProcessPayment" method="post">
+    <div class="form-group">
+        <label asp-for="CardNumber" class="control-label"></label>
+        <input asp-for="CardNumber" class="form-control" type="text" placeholder="Número do Cartão" />
+        <span asp-validation-for="CardNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CardHolderName" class="control-label"></label>
+        <input asp-for="CardHolderName" class="form-control" type="text" placeholder="Nome do Titular" />
+        <span asp-validation-for="CardHolderName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ExpiryMonth" class="control-label"></label>
+        <input asp-for="ExpiryMonth" class="form-control" type="text" placeholder="Mês de Expiração" />
+        <span asp-validation-for="ExpiryMonth" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ExpiryYear" class="control-label"></label>
+        <input asp-for="ExpiryYear" class="form-control" type="text" placeholder="Ano de Expiração" />
+        <span asp-validation-for="ExpiryYear" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CVV" class="control-label"></label>
+        <input asp-for="CVV" class="form-control" type="text" placeholder="CVV" />
+        <span asp-validation-for="CVV" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Amount" class="control-label"></label>
+        <input asp-for="Amount" class="form-control" type="number" step="0.01" placeholder="Valor" />
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Pagar</button>
+</form>
+
+
+
+
